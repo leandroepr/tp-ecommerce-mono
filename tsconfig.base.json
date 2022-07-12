@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tp-ecommerce-mono/services": ["libs/services/src/index.ts"],
+      "@tp-ecommerce-mono/types": ["libs/types/src/index.ts"],
+      "@tp-ecommerce-mono/utils": ["libs/utils/src/index.ts"],
+      "@tp-ecommerce-mono/web-toolkit": ["libs/web-toolkit/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
