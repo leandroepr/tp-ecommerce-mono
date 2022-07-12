@@ -1,5 +1,7 @@
 import { SearchIcon } from '@heroicons/react/outline';
 import { classNames } from '@tp-ecommerce-mono/utils';
+import Button from '../button/button';
+
 import React from 'react';
 
 export interface SearchInputProps {
@@ -49,12 +51,11 @@ const SearchInput: React.FC<SearchInputProps> = ({
         onKeyUp={handleOnSearch}
         {...inputProps}
       />
-      <button
+      <Button
+        contentButton={<SearchIcon className='w-6 h-6' />}
         className="absolute right-0 z-10 inset-y-0 flex items-center justify-center shrink-0 border-l my-2 px-2 active:opacity-75 hover:text-opacity-90 "
         onClick={handleOnClickToSearch}
-      >
-        <SearchIcon className="w-6 h-6 " />
-      </button>
+      />
     </div>
   );
 };
