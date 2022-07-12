@@ -8,7 +8,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to store!</title>
       </Head>
-      <main className="app">
+      <main className="flex min-h-screen min-w-full">
         <Component {...pageProps} />
       </main>
     </>
