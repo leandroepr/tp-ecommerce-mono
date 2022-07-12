@@ -10,11 +10,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to store!</title>
       </Head>
+      <Header />
       <main className="flex flex-col min-h-screen min-w-full">
-        <Header/>
         <Component {...pageProps} />
-        <Footer/>
       </main>
+      <Footer />
     </>
   );
 }
