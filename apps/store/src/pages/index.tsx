@@ -1,4 +1,5 @@
 import React from 'react';
+import RelatedSearch from '../components/related-searches/related-searches';
 import SearchInput from '../components/search-input/search-input';
 
 export function Index() {
@@ -22,6 +23,7 @@ export function Index() {
           onSearch={(value) => console.log('Pesquisar por:', value)}
           placeholder="Pesquisar por produto..."
         />
+        <RelatedSearch />
       </div>
     </div>
   );
