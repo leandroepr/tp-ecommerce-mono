@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchInput from '../components/search-input/search-input';
+import Spinner from '../components/spinner/spinner';
 
 export function Index() {
   const [search, setSearch] = React.useState('');
@@ -22,6 +23,7 @@ export function Index() {
           onSearch={(value) => console.log('Pesquisar por:', value)}
           placeholder="Pesquisar por produto..."
         />
+        <Spinner size={50} color={'rgb(14 165 233)'} />
       </div>
     </div>
   );
