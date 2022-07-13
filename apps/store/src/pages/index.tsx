@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/footer/footer';
+import Footer from '../components/footer-component/footer-component';
 import SearchInput from '../components/search-input/search-input';
 
 export function Index() {
