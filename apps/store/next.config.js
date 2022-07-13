@@ -10,6 +10,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: true,
   },
+  images: {
+    domains: ['logoipsum.com'], // <== Domain name
+  },
 };
 
 module.exports = withNx(nextConfig);
