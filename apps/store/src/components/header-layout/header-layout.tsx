@@ -61,29 +61,6 @@ const HeaderLayout = () => {
           <div>i</div>
         </div>
       </div>
-
-      {/* <div className="flex container justify-center pt-8 w-96 h-28">
-        <div className="flex container flex-col gap-6 w-80">
-          <div className="py-1 flex flex-row">
-            <div>
-              <div className="pr-2">i</div>
-              <div className="pr-2">
-                Aproveite preços incríveis todos os dias
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row pb-2">
-            <div>
-              <div className="inline pr-2">i</div>
-              <div className="inline pr-2">Usuário</div>
-              <div className="inline px-2">Compras</div>
-              <div className="inline px-2">Favoritos</div>
-              <div className="inline px-3">i</div>
-              <div className="inline px-3">i</div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
