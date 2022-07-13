@@ -22,4 +22,6 @@ const typeMap = {
   cardCurrency: 'text-slate-800 text-2xl',
   cardCents: 'text-slate-800 text-xs leading-6',
   cardInstallment: 'text-sm text-slate-500',
+  expandedCardInstallment: 'text-slate-800 text-xs',
+  productName: 'text-gray-500 tracking-tight text-xs',
 };
