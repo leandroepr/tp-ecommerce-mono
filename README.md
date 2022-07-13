@@ -1,94 +1,73 @@
+# Welcome to Trainees E-commerce!
 
+This project aims to establish previous contents of the 80 Lines trainee program, class of 2022.
+In addition to teaching new techniques and assessing the participants' knowledge and teamwork.
 
-# TpEcommerceMono
+---
 
-This project was generated using [Nx](https://nx.dev).
+## Summary
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+- [Welcome to Trainees E-commerce!](#welcome-to-trainees-e-commerce)
+- [Summary](#summary)
+- [Context](#context)
+- [Skills](#skills)
+- [Instructions for running the project](#instructions-for-running-the-project)
+- [Relevant scripts from main `package.json`](#relevant-scripts-from-main-packagejson)
 
-🔎 **Smart, Fast and Extensible Build System**
+---
 
-## Adding capabilities to your workspace
+# Context
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+80 Lines is a team of developers and designers highly experienced in every area of front-end development, with the most modern frameworks. They deliver high quality app development, web development and modern UI/UXdesign.
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+In June 2022, six new developers began their journey at 80 Lines through the Trainee Program. This program is divided into three months, the first consisting of classes and orientations.
 
-Below are our core plugins:
+This project is the second stage of the program, which consists of a fictitious project for fixing previous lessons and evaluating progress.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+Trainees will work together as a team responsible for developing a product purchasing platform.
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+---
 
-## Generate an application
+# Skills
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+In this project trainees will learn, exercise and will be evaluated for the following skills:
 
-> You can use any of the plugins above to generate applications as well.
+- HTML, CSS and Typescript;
+- Tailwind.css:
+- React.ts, Next.ts and React Query;
+- SOLID principles;
+- Git, GitHub and Git Flow;
+- Agile methodologies;
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+---
 
-## Generate a library
+# Instructions for running the project
 
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
+This project can be found at this [repository](https://github.com/leandroepr/tp-ecommerce-mono).
 
-> You can also use any of the plugins above to generate libraries as well.
+After make the clone or fork, install the dependencies with:
 
-Libraries are shareable across libraries and applications. They can be imported from `@tp-ecommerce-mono/mylib`.
+- `npm install` or `yarn install`
 
-## Development server
+To run the project follow one of the options below.
 
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+# Relevant scripts from main `package.json`
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+**These are the project root scripts (`./package.json`)**:
 
-## Build
+- `start`: To start the application, navigate to http://localhost:4200/.
 
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+  - _using (in the project root): `npm start` or `yarn start`_
 
-## Running unit tests
+- `build`: The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+  - _using (in the project root): `npm build` or `yarn build`_
 
-Run `nx affected:test` to execute the unit tests affected by a change.
+- `dev`: For a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-## Running end-to-end tests
+  - _using (in the project root): `npm dev` or `yarn dev`_
 
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+- `test`: To execute the unit tests via [Jest](https://jestjs.io).
+  - _using (in the project root): `npm test` or `yarn test`_
