@@ -1,68 +1,91 @@
-const Header = () => {
+import Image from 'next/image';
+import SearchInput from '../search-input/search-input';
+
+const HeaderLayout = () => {
   return (
-    <div className="flex container mx-auto bg-yellow-300 text-zinc-600 w-[1280px] h-28">
-      <div className="flex justify-center py-4 pl-4 w-48 h-28">
-        <div className="flex flex-col gap-1 w-40">
-          <div className="flex">
-            <img
-              className="object-cover w-32 h-12"
-              src="https://livejones.com/wp-content/uploads/2020/05/logo-Placeholder.png"
-            />
+    <div className="flex container bg-yellow-300 text-gray-500 w-[1280px] h-24">
+      <div className="flex justify-center py-3 pl-4 w-48 h-28">
+        <div className="flex flex-col w-40">
+          <div className="flex flex-col">
+            <div>
+              <Image
+                src="https://logoipsum.com/logoipsum.png"
+                alt="logo"
+                width={100}
+                height={40}
+              />
+            </div>
           </div>
-          <div className="text-xs w-38 py-1">
+          <div className="text-xs w-38">
             <div className="flex flex-row">
-              <div className="py-3 pr-2">i</div>
+              <div className="py-2 pr-2">i</div>
               <div>
-                Enviar para Fulano, <strong>endereço Tal</strong>, número 20
+                Enviar para Fulano, <strong>endereço Tal, número 20</strong>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="flex container pl-8 pr-2 py-4 w-[740px] h-28">
+      <div className="flex container pl-8 pr-2 pt-3 w-[740px] h-28">
         <div className="flex flex-col gap-3">
           <div>
-            <input
-              type="text"
-              placeholder="Buscar categorias e produtos..."
-              className="w-[700px] h-12 rounded placeholder:pl-4"
+            <SearchInput
+              className=" w-[685px]"
+              onSearch={(value) => console.log('Pesquisar por:', value)}
+              placeholder="Pesquisar por produto..."
             />
           </div>
-          <ul className="inline">
-            <li className="inline pr-2">Todos</li>
-            <li className="inline px-2">Roupas</li>
-            <li className="inline px-2">Calçados</li>
-            <li className="inline px-2">Utilitários</li>
-            <li className="inline px-2">CRUD</li>
-          </ul>
+          <div className="flex flex-column gap-2 py-0">
+            <div className="pr-2">Todos</div>
+            <div className="px-2">Roupas</div>
+            <div className="px-2">Calçados</div>
+            <div className="px-2">Utilitários</div>
+            <div className="px-2">CRUD</div>
+          </div>
         </div>
       </div>
 
-      <div className="flex container justify-center pt-8 w-96 h-28">
-        <div className="flex container flex-col gap-6 w-80">
-          <div className="py-1flex">
-            <ul className="inline">
-              <li className="inline pr-2">i</li>
-              <li className="inline pr-2">
-                Aproveite preços incríveis todos os dias
-              </li>
-            </ul>
-          </div>
-          <div className="pb-2">
-            <ul className="inline">
-              <li className="inline pr-2">i</li>
-              <li className="inline pr-2">Usuário</li>
-              <li className="inline px-2">Compras</li>
-              <li className="inline px-2">Favoritos</li>
-              <li className="inline px-3">i</li>
-              <li className="inline px-3">i</li>
-            </ul>
-          </div>
+      <div className="flex flex-col gap-5 justify-center pt-2 mx-5">
+        <div className="flex flex-row gap-3">
+          <div>i</div>
+          <div>Aproveite preços incríveis todos os dias</div>
+        </div>
+
+        <div className="flex flex-row gap-5">
+          <div>i</div>
+          <div>Usuários</div>
+          <div>Compras</div>
+          <div>Favoritos</div>
+          <div>i</div>
+          <div>i</div>
         </div>
       </div>
+
+      {/* <div className="flex container justify-center pt-8 w-96 h-28">
+        <div className="flex container flex-col gap-6 w-80">
+          <div className="py-1 flex flex-row">
+            <div>
+              <div className="pr-2">i</div>
+              <div className="pr-2">
+                Aproveite preços incríveis todos os dias
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row pb-2">
+            <div>
+              <div className="inline pr-2">i</div>
+              <div className="inline pr-2">Usuário</div>
+              <div className="inline px-2">Compras</div>
+              <div className="inline px-2">Favoritos</div>
+              <div className="inline px-3">i</div>
+              <div className="inline px-3">i</div>
+            </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };
 
-export default Header;
+export default HeaderLayout;
