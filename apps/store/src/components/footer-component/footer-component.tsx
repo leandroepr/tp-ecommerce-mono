@@ -13,7 +13,7 @@ const FooterComponent: React.FC<FooterComponentProps> = ({
   return (
     <div
       className={classNames(
-        'justify-center max-w-max text-xs text-opacity-1 text-gray-200',
+        'justify-center max-w-max text-xs text-opacity-1 text-gray-200 m-auto',
         className
       )}
     >
