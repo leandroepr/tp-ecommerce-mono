@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 type FlexProps = {
   children: React.ReactNode
-  className: string
+  className?: string
 }
 
 export default function Flex ({children, className}: FlexProps) {

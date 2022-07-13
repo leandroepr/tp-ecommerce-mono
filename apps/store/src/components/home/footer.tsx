@@ -1,5 +1,6 @@
 import Placeholder from "../placeholder";
 
+
 export default function Footer () {
   return(
     <footer className="bottom-0 left-0">
