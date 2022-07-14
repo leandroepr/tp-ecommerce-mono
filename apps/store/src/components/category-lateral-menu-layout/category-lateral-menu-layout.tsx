@@ -1,6 +1,6 @@
 const CategoryLateralMenuLayout = () => {
   return (
-    <div className="flex w-52 h-fit bg-gray-100 text-gray-500 pt-1 text-lg">
+    <div className="flex h-fit bg-gray-100 text-gray-500 pt-1 text-lg">
       <div className="flex flex-col px-2 gap-9">
         <div className="flex flex-col gap-3">
           <h1 className="text-base text-gray-600">Calçados, Roupas e Bolsas</h1>
