@@ -1,1 +1,3 @@
-export * from './lib/utils';
+import { classNames } from './lib/class-names';
+
+export { classNames };
