@@ -9,13 +9,13 @@ const DefaultHeaderContent = () => {
         <div className="flex container flex-row gap-1 py-1 w-[150px]">
           <div className="text-xs py-2">i</div>
           <div className="text-xs">
-            Envie para Fulano, endereço Tal, número tal
+            Envie para Fulano, <strong>Endereço Tal, número tal</strong>
           </div>
         </div>
       </div>
 
-      <div className="flex grow-[10] flex-col py-2 gap-4">
-        <div>
+      <div className="flex grow-[10] flex-col py-2 px-3 gap-3">
+        <div className="pt-1">
           <SearchInput />
         </div>
         <div className="flex flex-row gap-6">
@@ -27,7 +27,7 @@ const DefaultHeaderContent = () => {
         </div>
       </div>
 
-      <div className="flex grow-[0] flex-col px-6 py-4 gap-4">
+      <div className="flex grow-[0] flex-col px-6 py-3 mt-2 gap-4">
         <div className="flex flex-row gap-3">
           <div>i</div>
           <div>Aproveite preços incríveis todos os dias</div>
