@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchInput from '../components/search-input/search-input';
+import Text from '../components/text/text';
 
 export function Index() {
   const [search, setSearch] = React.useState('');
@@ -22,6 +23,20 @@ export function Index() {
           onSearch={(value) => console.log('Pesquisar por:', value)}
           placeholder="Pesquisar por produto..."
         />
+      </div>
+      <div>
+        <Text textType="normal" tag="blue">
+          Arvo
+        </Text>
+        <Text textType="cardCents" tag="gray">
+          Arvo
+        </Text>
+        <Text textType="cardCurrency" tag="not">
+          Arvo
+        </Text>
+        <Text textType="cardInstallment">Arvo</Text>
+        <Text textType="expandedCardInstallment">Arvo</Text>
+        <Text textType="productName">Arvo</Text>
       </div>
     </div>
   );
