@@ -1,14 +1,9 @@
-import React from 'react'
+import { classNames } from '@tp-ecommerce-mono/utils';
+import React from 'react';
 
-type FlexProps = {
-  children: React.ReactNode
-  className: string
-}
+export type FlexProps = React.HTMLAttributes<HTMLDivElement>;
+const Flex: React.FC<FlexProps> = ({ className, ...props }) => {
+  return <div className={classNames('flex', className)} {...props} />;
+};
 
-export default function Flex ({children, className}: FlexProps) {
-  return(
-    <div className={`flex justify-center ${className}`}>
-      {children}
-    </div>
-  )
-}
+export default Flex;
