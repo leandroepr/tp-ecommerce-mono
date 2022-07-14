@@ -1,20 +1,39 @@
-import Flex from "../../components/flex";
-import Placeholder from "../../components/placeholder";
+import { NextPage } from 'next';
+import Flex from '../../components/flex';
+import Grid from '../../components/grid';
+import Placeholder from '../../components/placeholder';
+import {
+  Body,
+  Footer,
+  Header,
+  PublicLayout,
+} from '../../components/public-layout';
 
-export function Category() {
+const CategoryPage: NextPage = () => {
   return (
-    <Flex className="flex-col w-[67.5%] self-center">
-      <Placeholder height="50" width="800" text="Buscas Relacionadas" />
-      <Flex className="py-2 justify-between">
-        <aside>
+    <PublicLayout>
+      <Header className="py-4">
+        <span>header</span>
+      </Header>
+      <Body className="py-2">
+        <Placeholder height="50" width="800" text="Buscas Relacionadas" />
+        <Flex className="flex-row justify-between">
           <Placeholder height="600" width="300" text="Menu Lateral" />
-        </aside>
-        <Flex className="">
-          <Placeholder height="1200" width="900" text="Grid Produtos" />
+          <Grid>
+            <Placeholder height="500" width="300" text="Card" />
+            <Placeholder height="500" width="300" text="Card" />
+            <Placeholder height="500" width="300" text="Card" />
+            <Placeholder height="500" width="300" text="Card" />
+            <Placeholder height="500" width="300" text="Card" />
+            <Placeholder height="500" width="300" text="Card" />
+          </Grid>
         </Flex>
-      </Flex>
-    </Flex>
+      </Body>
+      <Footer className="text-center">
+        <span>footer</span>
+      </Footer>
+    </PublicLayout>
   );
-}
+};
 
-export default Category;
+export default CategoryPage;

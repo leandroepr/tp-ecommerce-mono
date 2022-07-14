@@ -1,22 +1,25 @@
-import React from 'react';
-import Flex from '../components/flex';
-import Placeholder from '../components/placeholder';
+import { NextPage } from 'next';
+import {
+  Body,
+  Footer,
+  Header,
+  PublicLayout,
+} from '../components/public-layout';
 
-
-export function Index() {
+const MainRoute: NextPage = () => {
   return (
-    <React.Fragment>
-      <Flex className="my-8">
-        <Placeholder width='1280' height='240' text='Carousel'/>
-      </Flex>
-      <Flex className="my-8">
-        <Placeholder width='1280' height='240' text='Carousel'/>
-      </Flex>
-      <Flex className="my-8">
-        <Placeholder width='1280' height='240' text='Carousel'/>
-      </Flex>
-    </React.Fragment>
+    <PublicLayout>
+      <Header className="py-4">
+        <span>header</span>
+      </Header>
+      <Body className="py-4">
+        <span>body</span>
+      </Body>
+      <Footer className="text-center">
+        <span>footer</span>
+      </Footer>
+    </PublicLayout>
   );
-}
+};
 
-export default Index;
+export default MainRoute;
