@@ -1,11 +1,26 @@
+import { NextPage } from 'next';
 import DefaultHeaderContent from '../components/default-header-content/default-header-content';
+import {
+  Body,
+  Footer,
+  Header,
+  PublicLayout,
+} from '../components/public-layout';
 
-export function Index() {
+const MainRoute: NextPage = () => {
   return (
-    <div className="w-full h-[120px]">
-      <DefaultHeaderContent />
-    </div>
+    <PublicLayout>
+      <Header>
+        <DefaultHeaderContent />
+      </Header>
+      <Body className="py-4">
+        <span>body</span>
+      </Body>
+      <Footer className="text-center">
+        <span>footer</span>
+      </Footer>
+    </PublicLayout>
   );
-}
+};
 
-export default Index;
+export default MainRoute;
