@@ -1,47 +1,47 @@
+import Column from '../column';
+import Row from '../row';
 import SearchInput from '../search-input/search-input';
+import HeaderLogo from './header-logo';
 
 const DefaultHeaderContent = () => {
   return (
-    <div className="bg-yellow-300 flex flex-row text-stone-600">
-      <div className="flex flex-col px-3 grow-[0]">
-        <div className="text-sm py-1 mt-5">Logo placeholder</div>
-
-        <div className="flex container flex-row gap-1 py-2 w-[150px]">
+    <div className="flex flex-row text-stone-600 p-4 space-x-6">
+      <Column className="w-44 space-y-4">
+        <HeaderLogo className="mr-2" />
+        <Row className="space-x-2 overflow-hidden">
           <div className="text-xs py-2">i</div>
           <div className="text-xs">
             Envie para Fulano, <strong>Endereço Tal, número tal</strong>
           </div>
-        </div>
-      </div>
+        </Row>
+      </Column>
 
-      <div className="flex grow-[10] flex-col py-2 px-3 gap-3">
-        <div className="pt-1">
-          <SearchInput />
-        </div>
-        <div className="flex flex-row gap-6">
+      <Column className="space-y-4 grow">
+        <SearchInput className="pt-1" placeholder="Pesquise por produtos..." />
+        <Row className="space-x-6">
           <div>Todos</div>
           <div>Roupas </div>
           <div>Calçados</div>
-          <div> Utilitários</div>
+          <div>Utilitários</div>
           <div>CRUD</div>
-        </div>
-      </div>
+        </Row>
+      </Column>
 
-      <div className="flex grow-[0] flex-col px-6 py-3 mt-2 gap-4">
-        <div className="flex flex-row gap-3">
+      <Column className="space-y-4">
+        <Row className="gap-3">
           <div>i</div>
           <div>Aproveite preços incríveis todos os dias</div>
-        </div>
+        </Row>
 
-        <div className="flex flex-row gap-5">
+        <Row className="gap-5">
           <div>i</div>
           <div>Usuário</div>
           <div>Compras</div>
           <div>Favoritos</div>
           <div>i</div>
           <div>i</div>
-        </div>
-      </div>
+        </Row>
+      </Column>
     </div>
   );
 };
