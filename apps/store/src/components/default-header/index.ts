@@ -1,1 +1,1 @@
-export * from './default-header-content';
+export * from './default-header';

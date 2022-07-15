@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import DefaultHeaderContent from '../components/default-header-content/default-header-content';
+import DefaultHeaderContent from '../components/default-header/default-header';
 import {
   Body,
   Footer,
